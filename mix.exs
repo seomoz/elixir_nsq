@@ -4,7 +4,7 @@ defmodule ElixirNsq.Mixfile do
   def project do
     [app: :elixir_nsq,
      version: "1.0.3",
-     elixir: "~> 1.1",
+     elixir: "~> 1.4.0",
      description: description(),
      package: package(),
      build_embedded: Mix.env == :prod,
@@ -30,11 +30,11 @@ defmodule ElixirNsq.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:poison, "~> 1.5.0"},
+      {:poison, "~> 2.2.0"},
       {:ibrowse, "~> 4.2"},
-      {:httpotion, "~> 2.1.0"},
+      {:httpotion, "~> 3.0.2"},
       {:uuid, "~> 1.1.2"},
-      {:socket, "~> 0.3.1"},
+      {:socket, "0.3.11"},
 
       # testing
       {:secure_random, "~> 0.2", only: :test},
